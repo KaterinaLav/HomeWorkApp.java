@@ -8,9 +8,12 @@ public class HomeWorkApp {
         checkSumSing();
         printColor();
         compareNumbers();
+
     }
 
-    private static void compareNumbers() {
+
+
+    private static void compareNumbers(){
         int numA = 7;
         int numB = 25;
         if (numA >= numB) {
@@ -25,7 +28,7 @@ public class HomeWorkApp {
         if (value <= 0) {
             System.out.println("Красный");
         } else if (value > 0 && value <=100) {
-            System.out.println("Желтый");            
+            System.out.println("Желтый");
         } else if (value > 100) {
             System.out.println("Зеленый");
         }
@@ -48,5 +51,5 @@ public class HomeWorkApp {
             System.out.println("Сумма отрицательная");
         }
     }
-    
+
 }
