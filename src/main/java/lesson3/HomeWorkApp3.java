@@ -15,7 +15,7 @@ public class HomeWorkApp3 {
         int[] my2arr = new int[100];
         for (int i = 0; i < my2arr.length; i++) {
             my2arr[i] = i + 1;
-            System.out.println(" ");
+            System.out.print(" ");
             System.out.print(my2arr[i] + " ");
         }
         System.out.println(" ");
@@ -28,9 +28,30 @@ public class HomeWorkApp3 {
         System.out.println(" ");
 
         for (int i = 0; i < arr3; i++) {
-
             System.out.print(+array3[i] + ", ");
+        }
+        System.out.println("  ");
+        task4();
+        System.out.println(" ");
+        task5(2, 3);
 
+}
+    public static void task4() {
+        int[][] arr = new int[3][3];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0, x = arr[i].length - 1; j < arr[i].length; j++, x--) {
+                if (i == j || i == x) arr[i][j] = 1;
+                else arr[i][j] = 0;
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.print("\n");
         }
     }
-}
+    public static void task5(int len, int initialValue){
+        int[] arr = new int[len];
+        for (int i = 0; i < len; i++) {
+            arr[i] = initialValue;
+            System.out.print("[" + i + "]" + arr[i] + " ");
+        }
+    }
+    }
